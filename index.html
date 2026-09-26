@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -528,6 +528,1239 @@ footer{
   <div class="container nav-inner">
 
     <a href="#home
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ali Hassan | International Relations Portfolio</title>
+
+<meta name="description"
+content="Academic portfolio of Ali Hassan, BS International Relations student at International Islamic University Islamabad.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --navy:#071b33;
+    --blue:#1565c0;
+    --sky:#42a5f5;
+    --gold:#e4b44c;
+    --white:#ffffff;
+    --bg:#f5f8fc;
+    --text:#172538;
+    --gray:#667085;
+    --card:#ffffff;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* NAVIGATION */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(7,27,51,.96);
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+.nav-container{
+    max-width:1150px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:var(--gold);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:22px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+}
+
+nav ul li a:hover{
+    color:var(--gold);
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    background:
+    linear-gradient(rgba(7,27,51,.90),rgba(7,27,51,.92)),
+    radial-gradient(circle at top right,#1565c0,transparent 45%);
+    color:white;
+    display:flex;
+    align-items:center;
+}
+
+.hero-container{
+    width:min(1150px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.5fr .8fr;
+    gap:60px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    background:rgba(66,165,245,.15);
+    border:1px solid var(--sky);
+    color:#90caf9;
+    padding:7px 15px;
+    border-radius:30px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(45px,7vw,78px);
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero h2{
+    font-size:25px;
+    color:#90caf9;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#d8e3ef;
+    font-size:18px;
+    max-width:700px;
+}
+
+.buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#101820;
+}
+
+.btn-secondary{
+    border:1px solid #90caf9;
+    color:white;
+}
+
+.profile{
+    width:100%;
+    max-width:320px;
+    aspect-ratio:1;
+    object-fit:cover;
+    border-radius:50%;
+    border:7px solid white;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    margin:auto;
+}
+
+/* GENERAL */
+
+section{
+    padding:80px 0;
+}
+
+.container{
+    width:min(1150px,92%);
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:38px;
+    color:var(--navy);
+    margin-bottom:10px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:var(--gray);
+    max-width:700px;
+    margin:0 auto 45px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:var(--card);
+    padding:28px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(20,40,70,.08);
+    border:1px solid #e5eaf1;
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:12px;
+}
+
+.card p{
+    color:var(--gray);
+}
+
+/* ABOUT */
+
+.about-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.info-list{
+    list-style:none;
+}
+
+.info-list li{
+    padding:12px 0;
+    border-bottom:1px solid #e5eaf1;
+}
+
+.info-list strong{
+    color:var(--navy);
+}
+
+/* EDUCATION */
+
+.timeline{
+    max-width:850px;
+    margin:auto;
+    border-left:3px solid var(--blue);
+    padding-left:30px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:var(--blue);
+    left:-39px;
+    top:8px;
+}
+
+.year{
+    color:var(--blue);
+    font-weight:bold;
+}
+
+.timeline-item h3{
+    color:var(--navy);
+    font-size:22px;
+    margin:5px 0;
+}
+
+/* STATS */
+
+.stats{
+    background:var(--navy);
+    color:white;
+}
+
+.stats .section-title{
+    color:white;
+}
+
+.stat-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.stat{
+    text-align:center;
+    padding:30px;
+}
+
+.stat-number{
+    font-size:42px;
+    font-weight:bold;
+    color:var(--gold);
+}
+
+.stat p{
+    color:#d8e3ef;
+}
+
+/* AGRICULTURE */
+
+.agriculture{
+    background:#eef6ee;
+}
+
+.agriculture .card{
+    border-top:5px solid #4caf50;
+}
+
+/* BS IR */
+
+.ir-card{
+    border-top:5px solid var(--blue);
+}
+
+.ir-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* MARKS TABLE */
+
+.table-wrapper{
+    overflow-x:auto;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(20,40,70,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    min-width:650px;
+}
+
+th{
+    background:var(--navy);
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+td{
+    padding:13px 15px;
+    border-bottom:1px solid #e5eaf1;
+}
+
+tr:hover{
+    background:#f5f9ff;
+}
+
+/* CERTIFICATES */
+
+.certificates{
+    background:#f0f4f9;
+}
+
+.certificate-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.certificate{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(20,40,70,.1);
+}
+
+.certificate img{
+    width:100%;
+    height:450px;
+    object-fit:contain;
+    background:white;
+}
+
+.certificate-content{
+    padding:22px;
+}
+
+.certificate-content h3{
+    color:var(--navy);
+}
+
+/* RESULT */
+
+.result-box{
+    background:var(--navy);
+    color:white;
+    border-radius:18px;
+    padding:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.result-box h3{
+    font-size:25px;
+}
+
+.result-box p{
+    color:#d8e3ef;
+}
+
+.pdf-btn{
+    background:var(--gold);
+    color:#111;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+/* GOALS */
+
+.goal-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.goal{
+    padding:20px;
+    background:white;
+    border-left:5px solid var(--blue);
+    border-radius:8px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#041221;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#aebdce;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    nav ul{
+        display:none;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding:70px 0;
+    }
+
+    .profile{
+        width:230px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .grid,
+    .stat-grid,
+    .certificate-grid,
+    .goal-list,
+    .about-box{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    section{
+        padding:60px 0;
+    }
+
+    .result-box{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<div class="nav-container">
+
+<div class="logo">
+Ali <span>Hassan</span>
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#agriculture">Agriculture</a></li>
+<li><a href="#ir">BS IR</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#certificates">Certificates</a></li>
+</ul>
+
+</div>
+</nav>
 
 
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-container">
+
+<div>
+
+<div class="badge">
+BS International Relations Student
+</div>
+
+<h1>
+Ali <span>Hassan</span>
+</h1>
+
+<h2>
+International Islamic University Islamabad
+</h2>
+
+<p>
+An undergraduate student of International Relations with an academic
+background in science and a family background rooted in agriculture.
+Interested in international affairs, research, leadership, public service,
+problem solving and continuous learning.
+</p>
+
+<div class="buttons">
+
+<a href="#education" class="btn btn-primary">
+Explore My Education
+</a>
+
+<a href="#certificates" class="btn btn-secondary">
+View Certificates
+</a>
+
+</div>
+
+</div>
+
+
+<img
+src="assets/profile.png"
+alt="Ali Hassan"
+class="profile"
+>
+
+</div>
+
+</header>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<p class="section-subtitle">
+Personal, academic and professional background.
+</p>
+
+<div class="about-box">
+
+<div class="card">
+
+<h3>Personal Information</h3>
+
+<ul class="info-list">
+
+<li>
+<strong>Name:</strong> Ali Hassan
+</li>
+
+<li>
+<strong>Father's Name:</strong> Muhammad Azam
+</li>
+
+<li>
+<strong>Date of Birth:</strong> 6 April 2009
+</li>
+
+<li>
+<strong>Current Field:</strong> International Relations
+</li>
+
+<li>
+<strong>Current Status:</strong> Undergraduate Student
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>My Academic Direction</h3>
+
+<p>
+My academic journey started with science education and has now moved
+towards International Relations. I am interested in understanding
+international politics, diplomacy, global affairs, research and the role
+of Pakistan in international relations.
+</p>
+
+<br>
+
+<p>
+I also aim to develop communication, leadership, analytical and
+research skills alongside my university education.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<div class="container">
+
+<h2 class="section-title">
+Education Journey
+</h2>
+
+<p class="section-subtitle">
+My academic journey from secondary education to International Relations.
+</p>
+
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="year">2024</div>
+
+<h3>
+Secondary School Certificate - Science Group
+</h3>
+
+<p>
+Government High School Chak No. 19/SB, Sargodha.
+</p>
+
+<p>
+Obtained <strong>1137 / 1200</strong> marks with
+<strong>A+</strong> grade.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="year">2025 - 2026</div>
+
+<h3>
+Higher Secondary Education - Pre-Medical
+</h3>
+
+<p>
+Punjab College of Information Technology, Sargodha.
+</p>
+
+<p>
+HSSC Part-I 2026 result record shows
+<strong>963 marks / A+</strong>.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="year">Current</div>
+
+<h3>
+BS International Relations
+</h3>
+
+<p>
+International Islamic University Islamabad (IIUI).
+</p>
+
+<p>
+Currently studying International Relations at undergraduate level.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements" class="stats">
+
+<div class="container">
+
+<h2 class="section-title">
+Academic Highlights
+</h2>
+
+<p class="section-subtitle">
+Selected academic achievements from the supplied documents.
+</p>
+
+<div class="stat-grid">
+
+<div class="stat">
+
+<div class="stat-number">
+1137/1200
+</div>
+
+<p>
+SSC 2024<br>
+A+ Grade
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+963
+</div>
+
+<p>
+HSSC Part-I 2026<br>
+A+
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-number">
+BS IR
+</div>
+
+<p>
+International Islamic University Islamabad
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AGRICULTURE -->
+
+<section id="agriculture" class="agriculture">
+
+<div class="container">
+
+<h2 class="section-title">
+Agriculture Background
+</h2>
+
+<p class="section-subtitle">
+An important part of my family and personal background.
+</p>
+
+<div class="card">
+
+<h3>
+Family Background in Agriculture
+</h3>
+
+<p>
+My father, Muhammad Azam, is a farmer. Therefore, agriculture is an
+important part of my family background and connection with rural life.
+</p>
+
+<br>
+
+<p>
+This background has given me an understanding of the importance of
+agriculture, rural communities, farming and the challenges faced by
+people connected with the agricultural sector.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BS INTERNATIONAL RELATIONS -->
+
+<section id="ir">
+
+<div class="container">
+
+<h2 class="section-title">
+BS International Relations
+</h2>
+
+<p class="section-subtitle">
+My current academic field and areas of interest.
+</p>
+
+<div class="grid">
+
+<div class="card ir-card">
+
+<div class="ir-icon">🌍</div>
+
+<h3>
+International Politics
+</h3>
+
+<p>
+Understanding relations between states, international actors and
+global political developments.
+</p>
+
+</div>
+
+
+<div class="card ir-card">
+
+<div class="ir-icon">📚</div>
+
+<h3>
+Research & Analysis
+</h3>
+
+<p>
+Developing research, analytical thinking, academic writing and
+evidence-based discussion skills.
+</p>
+
+</div>
+
+
+<div class="card ir-card">
+
+<div class="ir-icon">🤝</div>
+
+<h3>
+Diplomacy & Public Service
+</h3>
+
+<p>
+Learning about diplomacy, international cooperation and Pakistan's
+role in world affairs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SSC MARKS -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+SSC Academic Record
+</h2>
+
+<p class="section-subtitle">
+Subject-wise marks shown on the supplied 2024 Secondary School Certificate.
+</p>
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Subject</th>
+<th>Maximum</th>
+<th>Obtained</th>
+<th>Percentile</th>
+<th>Grade</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Urdu</td>
+<td>150</td>
+<td>138</td>
+<td>93.88</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>English</td>
+<td>150</td>
+<td>135</td>
+<td>90.00</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Islamiyat Compulsory</td>
+<td>100</td>
+<td>98</td>
+<td>98.00</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Pakistan Studies</td>
+<td>100</td>
+<td>92</td>
+<td>92.00</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Mathematics</td>
+<td>150</td>
+<td>145</td>
+<td>96.67</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Translation of Holy Quran</td>
+<td>100</td>
+<td>100</td>
+<td>100.00</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Biology</td>
+<td>150</td>
+<td>140</td>
+<td>93.33</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Physics</td>
+<td>150</td>
+<td>144</td>
+<td>96.00</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Chemistry</td>
+<td>150</td>
+<td>145</td>
+<td>96.67</td>
+<td>A+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GOALS -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Future Goals & Interests
+</h2>
+
+<p class="section-subtitle">
+Areas in which I want to continue learning and developing.
+</p>
+
+<div class="goal-list">
+
+<div class="goal">
+<strong>🌍 International Affairs</strong>
+<p>Develop deeper knowledge of international relations and global affairs.</p>
+</div>
+
+<div class="goal">
+<strong>🔎 Research</strong>
+<p>Improve research, analytical thinking and academic writing.</p>
+</div>
+
+<div class="goal">
+<strong>🎯 Leadership</strong>
+<p>Develop leadership, communication and teamwork abilities.</p>
+</div>
+
+<div class="goal">
+<strong>💡 Technology & AI</strong>
+<p>Learn useful AI and digital tools alongside academic studies.</p>
+</div>
+
+<div class="goal">
+<strong>📖 English Communication</strong>
+<p>Continue improving English speaking, writing and communication.</p>
+</div>
+
+<div class="goal">
+<strong>🤝 Public Service</strong>
+<p>Use education and skills for positive contribution to society.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CERTIFICATES -->
+
+<section id="certificates" class="certificates">
+
+<div class="container">
+
+<h2 class="section-title">
+Academic Certificates
+</h2>
+
+<p class="section-subtitle">
+Selected academic documents supplied for this portfolio.
+</p>
+
+<div class="certificate-grid">
+
+
+<div class="certificate">
+
+<img
+src="assets/matric-certificate.jpg"
+alt="Ali Hassan SSC Certificate"
+>
+
+<div class="certificate-content">
+
+<h3>
+Secondary School Certificate 2024
+</h3>
+
+<p>
+Science Group, BISE Sargodha.
+Obtained 1137 out of 1200 marks with A+ grade.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="certificate">
+
+<img
+src="assets/hssc-grading-details.jpg"
+alt="HSSC grading certificate"
+>
+
+<div class="certificate-content">
+
+<h3>
+HSSC Certificate / Grading Details
+</h3>
+
+<p>
+Official grading formula and certificate conditions from the supplied
+document.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="result-box" style="margin-top:35px;">
+
+<div>
+
+<h3>
+HSSC Part-I Result 2026
+</h3>
+
+<p>
+Punjab College of Information Technology Sargodha
+</p>
+
+<p>
+Result recorded on supplied document:
+<strong>963 / A+</strong>
+</p>
+
+</div>
+
+<a
+href="assets/hssc-part1-result-2026.pdf"
+target="_blank"
+class="pdf-btn"
+>
+Open Result PDF
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRIVACY -->
+
+<section>
+
+<div class="container">
+
+<div class="card">
+
+<h3>
+Privacy Notice
+</h3>
+
+<p>
+Official certificates and result documents may contain registration
+numbers, roll numbers, barcodes and other personal information.
+Before publishing this website publicly on GitHub, it is recommended
+to use redacted copies of documents where necessary.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+Ali Hassan
+</h2>
+
+<p>
+BS International Relations
+</p>
+
+<p>
+International Islamic University Islamabad
+</p>
+
+<p>
+Academic Portfolio · 2026
+</p>
+
+</footer>
+
+
+</body>
+  </html>
+assets/profile.png
+assets/matric-certificate.jpg
+assets/hssc-grading-details.jpg
+assets/hssc-part1-result-2026.pdf
                 
